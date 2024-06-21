@@ -1,6 +1,14 @@
+import 'package:banner/banner.dart';
 import 'package:flutter/material.dart';
+import 'package:salescode_project/bootstrap.dart';
+import 'package:salescode_sdk/salescode_sdk.dart';
 
-void main() {
+void main() async {
+  Environment.setEnvironment(Env.objectbox);
+  await bootstrap();
+  BannerService bannerService =
+      ServiceRegistry.getService<BannerService>("BannerService");
+  print(bannerService.serviceName);
   runApp(const MyApp());
 }
 
