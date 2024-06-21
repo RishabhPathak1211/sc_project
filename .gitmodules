@@ -1,0 +1,6 @@
+[submodule "salescode_sdk"]
+	path = salescode_sdk
+	url = https://github.com/RishabhPathak1211/sc_sdk.git
+[submodule "modules"]
+	path = modules
+	url = https://github.com/RishabhPathak1211/sc_modules.git
